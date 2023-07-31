@@ -55,6 +55,8 @@ code {
 /* homePage */
 .homePage {
   padding-top: 4em;
+  min-height: 100vh;
+  background: #fee4e5;
 }
 .homePage h2 {
   margin: 20px 0 30px 0;
@@ -64,7 +66,9 @@ code {
 }
 /* products list */
 .product-list {
-  padding-top: 5em;
+  padding-top: 6em;
+  background-color: rgb(190, 223, 242, 0.7);
+  min-height: 100vh;
 }
 .table tbody td {
   text-align: center;
