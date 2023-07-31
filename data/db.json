@@ -49,19 +49,9 @@
       }
     },
     {
-      "title": "ali",
-      "price": 0,
+      "title": "choose",
+      "price": "100",
       "id": 5
-    },
-    {
-      "title": "azaz",
-      "price": "12",
-      "id": 6
-    },
-    {
-      "title": "aaxas",
-      "price": "12",
-      "id": 7
     }
   ],
   "topRated": [

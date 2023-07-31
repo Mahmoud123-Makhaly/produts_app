@@ -21,11 +21,10 @@ const ProductDetails = () => {
           alt="Card image cap"
         />
         <div class="card-body my-4">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-          </p>
+          <h5 class="card-title" style={{ color: "#d33" }}>
+            {productDetails.category}
+          </h5>
+          <p class="card-text">{productDetails.title}</p>
           <Link to="/productList" href="#" class="btn btn-primary">
             Back To ProductList
           </Link>

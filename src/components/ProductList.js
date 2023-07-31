@@ -66,7 +66,7 @@ const ProductList = ({ setCart, fetchAllProducts, allproducts }) => {
         <Link to="/addproduct" className="btn btn-success my-2 ms-3">
           Add New Products
         </Link>
-        <div>
+        <div className="product-list-btns">
           <button
             onClick={handeleSortByHigher}
             className="btn btn-info mx-3 my-1"
@@ -96,13 +96,13 @@ const ProductList = ({ setCart, fetchAllProducts, allproducts }) => {
                 <tr key={item.id}>
                   <th scope="col">{item.id}</th>
                   <th scope="col">{item.price} $</th>
-                  <th scope="col">{item.title.slice(0, 25)}</th>
+                  <th scope="col">{item.title.slice(0, 15)} ...</th>
                   <th scope="col" className="actions">
                     <Link to={`/product/${item.id}`} className="btn btn-info">
                       View
                     </Link>
                     <button
-                      className="btn btn-danger mx-1"
+                      className="btn btn-danger mx-1 delete"
                       onClick={() => handleDelete(item.id)}
                     >
                       Delete

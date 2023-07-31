@@ -32,6 +32,7 @@ const HomePage = () => {
                     className="card-text text-center"
                   >
                     <h4>{item.category}</h4>
+                    <p>{item.title.slice(0, 15)}...</p>
                   </p>
                 </div>
               </div>

@@ -75,12 +75,13 @@ code {
 
 @media (max-width: 768px) {
   .table tbody .actions {
-    width: 60%;
+    width: 70%;
   }
 }
 @media (max-width: 991px) {
   .table tbody .actions .addToCart,
-  .table tbody .actions .edit {
+  .table tbody .actions .edit,
+  .table tbody .actions .delete {
     margin: 5px 0;
   }
 }
@@ -108,4 +109,18 @@ code {
 .product-detils .card img {
   width: 100%;
   height: 20em;
+}
+.product-list-btns {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 575px) {
+  .product-list-btns {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .product-list-btns button {
+    font-size: 13px;
+  }
 }
