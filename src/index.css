@@ -1,13 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500&family=Darumadrop+One&family=Kanit:ital,wght@0,200;0,300;1,300&family=Lumanosimo&family=Montserrat:ital,wght@0,300;0,400;1,200;1,300&family=Nunito+Sans:ital,wght@0,300;0,400;0,500;0,600;1,200;1,400;1,500&family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;1,100;1,200&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&family=Roboto+Mono:ital,wght@0,300;0,400;1,200;1,300;1,400&family=Tajawal:wght@300;400&family=Ubuntu:ital,wght@0,400;1,300;1,400&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Montserrat", sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Navbar style */
+.navbar {
+  margin-bottom: 1em;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+#navbarSupportedContent form {
+  display: flex;
+  align-items: center;
+}
+#navbarSupportedContent form p svg {
+  color: #fff;
+  font-size: 22px;
+  margin-left: 20px;
+}
+#navbarSupportedContent form p {
+  position: relative;
+}
+#navbarSupportedContent form p span {
+  position: absolute;
+  left: 31px;
+  font-size: 13px;
+  bottom: 9px;
+  color: #fd5959;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fd5959;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 17px;
+}
+/* homePage */
+.homePage {
+  padding-top: 4em;
+}
+.homePage h2 {
+  margin: 20px 0 30px 0;
+}
+.homePage .card img {
+  height: 15em;
+}
+/* products list */
+.product-list {
+  padding-top: 5em;
+}
+.table tbody td {
+  text-align: center;
+}
+.table tbody .actions {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .table tbody .actions {
+    width: 60%;
+  }
+}
+@media (max-width: 991px) {
+  .table tbody .actions .addToCart,
+  .table tbody .actions .edit {
+    margin: 5px 0;
+  }
+}
+/* edit-product */
+.edit-product {
+  padding-top: 4em;
+  height: 100vh;
+}
+/* AddProduct */
+.AddProduct {
+  padding-top: 3em;
+}
+/* .product-detils */
+.product-detils {
+  padding-top: 4em;
+  background: #e8e8e8;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.product-detils .card {
+  width: 30rem;
+}
+.product-detils .card img {
+  width: 100%;
+  height: 20em;
 }
